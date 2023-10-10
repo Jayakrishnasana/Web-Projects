@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <form action="success.html">
+                <h2><u>Register Form</u></h2>
+                
+                <div class="input-box">First Name:
+                    <input type="text" placeholder="abc" id="firstname"  required>
+                    
+                </div>
+
+                <div class="input-box">Last Name:
+                    <input type="text" placeholder="abc" id="lastname" required >
+                   
+                </div>
+
+                <div class="input-box">Date Of Birth:
+                    <input type="date" placeholder="abc" id="dateofbirth" required>
+
+                </div>
+
+                <div class="input-box">Enter Email:
+                    <input type="email" placeholder="abc@gmail.com" id="email" required>
+                </div>
+
+                <div class="input-box" >Enter Gender:
+                  
+                    <input type="radio" name="gender" id="male" value="male" required>Male
+                    <input type="radio" name="gender" id="female" value="female" required>Female
+                </div>
+                   
+                <div class="input-box">Enter Number:
+                    <input type="tel" placeholder="987*****" id="phoneNumber" required>
+                </div>
+
+                <div class="input-box" >Select Country
+                    <select  id="country" required>
+                        <option value="None">None</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="Russia">Russia</option>
+                        <option value="New York">New York</option>
+                      </select>
+				</select>
+
+
+                
+
+                <div class="input-box" >Enter Profession :
+                    <input type="text" placeholder="abc" id="profession" required >
+                    
+                </div>
+                
+
+                <div>
+                    <div class="button">
+                        <input type="submit" >
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>  
+    
+
+
+
+    
+</body>
+<script>
+
+    function A(){
+        var firstname=document.getElementById("firstname").value
+        var lastname=document.getElementById("lastname").value
+         var dateofbirth=document.getElementById("dateofbirth").value
+         var email=document.getElementById("email").value
+         var gender;
+         var phoneNumber=document.getElementById("phoneNumber").value
+         var country=document.getElementById("country").value
+         var profession=document.getElementById("profession").value
+
+         
+         var m=document.getElementById("male")
+        var f=document.getElementById("female")
+        
+        if(m.checked==true){
+            
+            gender=m.value
+           
+        }
+        else if(f.checked==true){
+            
+            gender=f.value
+            
+        }
+        
+    
+        
+        alert(firstname+"   "+lastname+"    "+email+"    "+dateofbirth+"   "+gender+"   "
+        +phoneNumber+"  "+country+"   "+profession)
+
+           
+    }
+    
+</script>
+
+</html>
